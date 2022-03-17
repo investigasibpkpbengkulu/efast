@@ -1,5 +1,6 @@
 .pallete {
   #742f61 #cc6666 #336666 #0504f9 #ff0000
+  #f4f6fc #cae8ff #5cb6f9 #087cfc #233dff #12229d #050a30
 }
 
 /*  */
@@ -15,22 +16,33 @@ body{
   padding: 1% 10%;
   font-size: 1.2rem;
 }
+@media (max-width:500px){
+  #navbar{
+  font-size:3rem;
+  }
+}
+
 #title {
   background-color: #336666;
 }
 #features{
-  text-align: center;
+  text-align: left;
   position:relative;
-  bot tom:200px;
-  padding:2% 0 2%;
+  padding:8% 0 ;
   margin:0 0;
   background-color:white;
+}
+@media (max-width:1200px){
+  #features{
+    text-align: center;
+  }
 }
 
 #testimonials{
   background-color:#742f61;
   text-align: center;
   color:white;
+  padding:0 0 4%;
 }
 #press{
   text-align: center;
@@ -64,6 +76,7 @@ h1 {
 }
 h2{
   color:#cc6666;
+  font-size: 3rem;
 }
 
 .features-h3{
@@ -91,22 +104,26 @@ h2{
   padding: 5% 10% 11%;
   height:10%;
 }
-#features .container-fluid{
+/* #features .container-fluid{
   padding: 12% 8% 12%;
-}
+} */
 
 .row-title{
 padding:5% 0;
 }
+.col-lg-6{
+  padding:0 0;
+}
 
-.iphone7{
-  width:350px;
-  right:17%;
-  transform: rotate(14deg);
+.gambarJudul{
+  width:45%;
+  right:8%;
+  transform: rotate(0deg);
   position: absolute;
 }
 @media (max-width:1200px){
-  .iphone7{
+  .gambarJudul{
+    width:100%;
     position:static;
     transform: rotate(0deg);
     text-align: center;
@@ -150,41 +167,48 @@ padding:5% 0;
 }
 
 /* relax logo kursi */
-.features-row{
-  padding:5% 3%;
-}
+
 .features-row-col{
   margin:0 0;
-  padding: 0 2%;
+  padding:0 0;
 }
-.features-row-col p {
-  text-align:center;
-  padding: 0 2%;
+.features-row-col.center{
+  padding:0 3%;
 }
 .features-icon:hover{
   color:#cc6666;
 }
-.features-row-col .features-icon{
+
+.features-icon{
   color:#336666;
   padding-bottom: 5%;
 }
 /* TESTIMONIAL SECTION */
 .testimonials-pasal2{
-padding:2% 0 2%;
+padding:2% 0 1%;
 font-weight: 500;
 }
 .testimonials-quote{
-  padding:0 15% 0;
+  padding:0 30%;
+  position: absolute;
+}
+@media (max-width:1200px){
+  .testimonials-quote{
+    position:static;
+    padding: 0 8%;
+  }
 }
 .testimonials-img{
   border-radius: 100%;
-  width:15%;
+  width:200px;
   display: block;
-  margin:5% auto 1%;
+  margin:15% auto 1%;
 
 }
 .testimonials-em{
+
 }
+
 
 /* Pressssssssssss */
 
