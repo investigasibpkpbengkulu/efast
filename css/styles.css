@@ -16,7 +16,7 @@ body{
   padding: 1% 10%;
   font-size: 1.2rem;
 }
-@media (max-width:500px){
+@media (max-width:1200px){
   #navbar{
   font-size:3rem;
   }
@@ -171,6 +171,12 @@ padding:5% 0;
 .features-row-col{
   margin:0 0;
   padding:0 0;
+}
+@media (max-width:1200px){
+  .features-row-col {
+    font-size: 2rem;
+    text-align: left;
+  }
 }
 .features-row-col.center{
   padding:0 3%;
